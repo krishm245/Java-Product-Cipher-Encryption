@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class encryptionClient {
     public static void main(String[] args) {
-//        encryption productCipher=new encryption();
-
+        
         AffineCipher affineCipher=new AffineCipher();
         TranspositionCipher tc=new TranspositionCipher();
         Scanner scanner=new Scanner(System.in);
@@ -19,7 +18,7 @@ public class encryptionClient {
             }
             else{
                 String subCipher=affineCipher.encryptionMessage(plaintext.toUpperCase());
-                System.out.println("Encrypted Message sent: "+ tc.doEncryption(subCipher));
+                System.out.println("Encrypted Message sent was: "+ tc.doEncryption(subCipher));
 
 
 
